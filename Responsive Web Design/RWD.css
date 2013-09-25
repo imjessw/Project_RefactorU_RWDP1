@@ -1,0 +1,30 @@
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+@media screen
+div#mw-panel {
+position: absolute;
+top: 160px;
+padding-top: 1em;
+width: 10em;
+left: 0;
+}
+
+@media screen
+body.vector-animateLayout #mw-panel {
+-moz-transition: padding-left 250ms;
+-webkit-transition: padding-left 250ms;
+-o-transition: padding-left 250ms;
+transition: padding-left 250ms;
+}
