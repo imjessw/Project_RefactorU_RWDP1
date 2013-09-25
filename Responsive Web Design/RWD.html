@@ -1,189 +1,34 @@
 <!DOCTYPE Html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="RWD.css">
-	<div class="container">
-
 </head>
+
 <body>
-<H1>Responsive Web design</H1>
-<p><b>Responsive web design</b> (<b>RWD</b>) is a <a href="/wiki/Web_design" title="Web design">web design</a> approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).<sup id="cite_ref-fluid_grid_1-0" class="reference"><a href="#cite_note-fluid_grid-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-RWD_Exs_2-0" class="reference"><a href="#cite_note-RWD_Exs-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-ZMGflexEx_3-0" class="reference"><a href="#cite_note-ZMGflexEx-3"><span>[</span>3<span>]</span></a></sup>
-<sup id="cite_ref-fluid_grid_1-0" class="reference"><a href="#cite_note-fluid_grid-1"><span>[</span>1<span>]</span></a></sup>
-<sup id="cite_ref-RWD_Exs_2-0" class="reference"><a href="#cite_note-RWD_Exs-2"><span>[</span>2<span>]</span></a></sup>
-<sup id="cite_ref-ZMGflexEx_3-0" class="reference"><a href="#cite_note-ZMGflexEx-3"><span>[</span>3<span>]</span></a></sup>
-</p>
-<p>A site designed with RWD<sup id="cite_ref-fluid_grid_1-1" class="reference"><a href="#cite_note-fluid_grid-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> adapts the layout to the viewing environment by using fluid, proportion-based grids,<sup id="cite_ref-EM_FG_5-0" class="reference"><a href="#cite_note-EM_FG-5"><span>[</span>5<span>]</span></a></sup> flexible images,<sup id="cite_ref-EM_FI_6-0" class="reference"><a href="#cite_note-EM_FI-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-AI_7-0" class="reference"><a href="#cite_note-AI-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-RI_8-0" class="reference"><a href="#cite_note-RI-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-EM_9-0" class="reference"><a href="#cite_note-EM-9"><span>[</span>9<span>]</span></a></sup> and <a href="/wiki/Cascading_Style_Sheets#CSS_3" title="Cascading Style Sheets">CSS3</a> <a href="/wiki/Media_queries" title="Media queries">media queries</a>,<sup id="cite_ref-ZMGflexEx_3-1" class="reference"><a href="#cite_note-ZMGflexEx-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-ZMGmediaQ_10-0" class="reference"><a href="#cite_note-ZMGmediaQ-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup> an extension of the <code>@media</code> rule.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
-<!-- list -->
-<ul>
-<li>The fluid <a href="/wiki/Grid_(page_layout)#Grid_use_in_web_design" title="Grid (page layout)" class="mw-redirect">grid</a> concept calls for page element sizing to be in relative units like percentages, rather than absolute units like <a href="/wiki/Pixel" title="Pixel">pixels</a> or <a href="/wiki/Point_(typography)" title="Point (typography)">points</a>.<sup id="cite_ref-EM_FG_5-1" class="reference"><a href="#cite_note-EM_FG-5"><span>[</span>5<span>]</span></a></sup></li>
-<li>Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing <a href="/wiki/HTML_element" title="HTML element">element</a>.<sup id="cite_ref-EM_FI_6-1" class="reference"><a href="#cite_note-EM_FI-6"><span>[</span>6<span>]</span></a></sup></li>
-<li><a href="/wiki/Media_queries" title="Media queries">Media queries</a> allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the <a href="/wiki/Web_browser" title="Web browser">browser</a>.</li>
-<li><a href="/wiki/Server-side" title="Server-side">Server-side</a> components (RESS) in conjunction with client-side ones such as media queries can produce faster-loading sites for access over cellular networks and also deliver richer functionality/usability avoiding some of the pitfalls of device-side-only solutions.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup></li>
-</ul>
-<div id="toc" class="toc">
-<div id="toctitle">
-<h2>Contents</h2>
-<span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
-<ul>
-<li class="toclevel-1 tocsection-1"><a href="#Related_concepts"><span class="tocnumber">1</span> <span class="toctext">Related concepts</span></a>
-<ul>
-<li class="toclevel-2 tocsection-2"><a href="#Mobile_first.2C_unobtrusive_JavaScript.2C_and_progressive_enhancement"><span class="tocnumber">1.1</span> <span class="toctext">Mobile first, unobtrusive JavaScript, and progressive enhancement</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Progressive_enhancement_based_on_browser-.2C_device-.2C_or_feature-detection"><span class="tocnumber">1.2</span> <span class="toctext">Progressive enhancement based on browser-, device-, or feature-detection</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-4"><a href="#Challenges.2C_and_other_approaches"><span class="tocnumber">2</span> <span class="toctext">Challenges, and other approaches</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">History</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-</ul>
-</div>
-<h2><span class="mw-headline" id="Related_concepts">Related concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Responsive_web_design&amp;action=edit&amp;section=1" title="Edit section: Related concepts">edit source</a><span class="mw-editsection-divider">&nbsp;| </span><a href="/w/index.php?title=Responsive_web_design&amp;veaction=edit&amp;section=1" title="Edit section: Related concepts" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="Mobile_first.2C_unobtrusive_JavaScript.2C_and_progressive_enhancement">Mobile first, unobtrusive JavaScript, and progressive enhancement</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Responsive_web_design&amp;action=edit&amp;section=2" title="Edit section: Mobile first, unobtrusive JavaScript, and progressive enhancement">edit source</a><span class="mw-editsection-divider">&nbsp;| </span><a href="/w/index.php?title=Responsive_web_design&amp;veaction=edit&amp;section=2" title="Edit section: Mobile first, unobtrusive JavaScript, and progressive enhancement" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>"Mobile first", <a href="/wiki/Unobtrusive_JavaScript" title="Unobtrusive JavaScript">unobtrusive JavaScript</a>, and <a href="/wiki/Progressive_enhancement" title="Progressive enhancement">progressive enhancement</a> (strategies for when a new site design is being considered) are related concepts that predated RWD: browsers of basic mobile phones do not understand JavaScript or <a href="/wiki/Media_queries" title="Media queries">media queries</a>, so the recommended practice is to create a basic web site, and enhance it for smart phones and PCs—rather than try <a href="/wiki/Fault-tolerant_system" title="Fault-tolerant system">graceful degradation</a> to make a complex, image-heavy site work on the most basic mobile phones.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-Firtman_15-0" class="reference"><a href="#cite_note-Firtman-15"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>17<span>]</span></a></sup></p>
-<h3><span class="mw-headline" id="Progressive_enhancement_based_on_browser-.2C_device-.2C_or_feature-detection">Progressive enhancement based on browser-, device-, or feature-detection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Responsive_web_design&amp;action=edit&amp;section=3" title="Edit section: Progressive enhancement based on browser-, device-, or feature-detection">edit source</a><span class="mw-editsection-divider">&nbsp;| </span><a href="/w/index.php?title=Responsive_web_design&amp;veaction=edit&amp;section=3" title="Edit section: Progressive enhancement based on browser-, device-, or feature-detection" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
-
-<p>Where a web site must support basic mobile devices that lack JavaScript, <a href="/wiki/User_agent#User_agent_identification" title="User agent">browser ("user agent") detection</a> (also called "<a href="/wiki/Browser_sniffing" title="Browser sniffing">browser sniffing</a>"), and <a href="/wiki/Mobile_device_detection" title="Mobile device detection">mobile device detection</a><sup id="cite_ref-Firtman_15-1" class="reference"><a href="#cite_note-Firtman-15"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-SSDD_18-0" class="reference"><a href="#cite_note-SSDD-18"><span>[</span>18<span>]</span></a></sup> are two ways of deducing if certain HTML and CSS features are supported (as a basis for progressive enhancement)—however, these methods are not completely reliable unless used in conjunction with a device capabilities database.</p>
-<p>For more capable mobile phones and PCs, <a href="/wiki/Comparison_of_JavaScript_frameworks" title="Comparison of JavaScript frameworks">JavaScript frameworks</a> like <a href="/wiki/Modernizr" title="Modernizr">Modernizr</a>, <a href="/wiki/JQuery" title="JQuery">jQuery</a>, and <a href="/wiki/JQuery_Mobile" title="JQuery Mobile">jQuery Mobile</a> that can directly test browser support for HTML/CSS features (or identify the device or user agent) are popular. <a href="/wiki/Polyfill" title="Polyfill">Polyfills</a> can be used to add support for features—e.g. to support media queries (required for RWD), and enhance HTML5 support, on Internet Explorer. Feature detection also might not be completely reliable: some may report that a feature is available, when it is either missing or so poorly implemented that it is effectively nonfunctional.<sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>19<span>]</span></a></sup><sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>20<span>]</span></a></sup></p>
-<h2><span class="mw-headline" id="Challenges.2C_and_other_approaches">Challenges, and other approaches</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Responsive_web_design&amp;action=edit&amp;section=4" title="Edit section: Challenges, and other approaches">edit source</a><span class="mw-editsection-divider">&nbsp;| </span><a href="/w/index.php?title=Responsive_web_design&amp;veaction=edit&amp;section=4" title="Edit section: Challenges, and other approaches" class="mw-editsection-visualeditor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>Luke Wroblewski has summarized some of the RWD and mobile design challenges, and created a catalog of multi-device layout patterns.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-RWD_22-0" class="reference"><a href="#cite_note-RWD-22"><span>[</span>22<span>]</span></a></sup><sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>23<span>]</span></a></sup> He&nbsp;suggests that, compared with a simple RWD approach, device experience or RESS (responsive web design with server-side components) approaches can provide a user experience that is better optimized for mobile devices.<sup id="cite_ref-RESS_24-0" class="reference"><a href="#cite_note-RESS-24"><span>[</span>24<span>]</span></a></sup><sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span>[</span>25<span>]</span></a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span>[</span>26<span>]</span></a></sup> Server-side "<a href="/wiki/Dynamic_CSS" title="Dynamic CSS" class="mw-redirect">dynamic CSS</a>" implementation of stylesheet languages like <a href="/wiki/Sass_(stylesheet_language)" title="Sass (stylesheet language)">Sass</a> or Incentivated's MML can be part of such an approach by accessing a server based API which handles the device (typically mobile handset) differences in conjunction with a device capabilities database in order to improve usability.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27"><span>[</span>27<span>]</span></a></sup> RESS is more expensive to develop of course, requiring more than just client-side logic, and so tends to be reserved for organisations with larger budgets.</p>
-<p>Luke Wroblewski has summarized some of the RWD and mobile design challenges, and created a catalog of multi-device layout patterns.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-RWD_22-0" class="reference"><a href="#cite_note-RWD-22"><span>[</span>22<span>]</span></a></sup><sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>23<span>]</span></a></sup> He&nbsp;suggests that, compared with a simple RWD approach, device experience or RESS (responsive web design with server-side components) approaches can provide a user experience that is better optimized for mobile devices.<sup id="cite_ref-RESS_24-0" class="reference"><a href="#cite_note-RESS-24"><span>[</span>24<span>]</span></a></sup><sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span>[</span>25<span>]</span></a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span>[</span>26<span>]</span></a></sup> Server-side "<a href="/wiki/Dynamic_CSS" title="Dynamic CSS" class="mw-redirect">dynamic CSS</a>" implementation of stylesheet languages like <a href="/wiki/Sass_(stylesheet_language)" title="Sass (stylesheet language)">Sass</a> or Incentivated's MML can be part of such an approach by accessing a server based API which handles the device (typically mobile handset) differences in conjunction with a device capabilities database in order to improve usability.<sup id="cite_ref-27" class="reference"><a href="#cite_note-27"><span>[</span>27<span>]</span></a></sup> RESS is more expensive to develop of course, requiring more than just client-side logic, and so tends to be reserved for organisations with larger budgets.</p>
-<p>There are now many ways of validating and testing RWD designs,<sup id="cite_ref-31" class="reference"><a href="#cite_note-31"><span>[</span>31<span>]</span></a></sup> ranging from mobile site validators and mobile emulators<sup id="cite_ref-32" class="reference"><a href="#cite_note-32"><span>[</span>32<span>]</span></a></sup> to simultaneous testing tools like Adobe Edge Inspect.<sup id="cite_ref-33" class="reference"><a href="#cite_note-33"><span>[</span>33<span>]</span></a></sup> The Firefox browser and the Chrome console offer responsive design viewport resizing tools, as do third parties.<sup id="cite_ref-34" class="reference"><a href="#cite_note-34"><span>[</span>34<span>]</span></a></sup><sup id="cite_ref-35" class="reference"><a href="#cite_note-35"><span>[</span>35<span>]</span></a></sup></p>
-<div id="mw-head">
-				<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
-	<h3 id="p-personal-label">Personal tools</h3>
+	<div id="container">
+		<h1>Responsive Web Design</h1>
+		<p><br><b> RWD<b></br> 
+			I am learning to make responsive webs sites as well as the most rad sites on the web.</p>
+		<h2>What I am learning</h2>
+		<p> The original assignment was to optimize the Wiki page on RWD to be have a RWD. Tha amout of information was overwhelming so I decided to further optimize my skills y creating one from scratch.</p>
+		<h3>My game plan</h3>
+		<p> I want to create this page  to use every element found in the Wiki page but dedicated to RWD. This way I am getting a better understanding on implementation of HTML, CSS and Js.</p>
+	</div>
+	<div id="sidebar">
 	<ul>
-<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Responsive+web+design&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Responsive+web+design" title="You're encouraged to log in; however, it's not mandatory. [ctrl-option-o]" accesskey="o">Log in</a></li>	</ul>
-</div>
-				<div id="left-navigation">
-					<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
-	<h3 id="p-namespaces-label">Namespaces</h3>
-	<ul>
-					<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Responsive_web_design" title="View the content page [ctrl-option-c]" accesskey="c">Article</a></span></li>
-					<li id="ca-talk"><span><a href="/wiki/Talk:Responsive_web_design" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Talk</a></span></li>
-			</ul>
-</div>
-<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
-	<h3 id="mw-vector-current-variant">
-		</h3>
-	<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="#" tabindex="-1"></a></h3>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-				</div>
-				<div id="right-navigation">
-					<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
-	<h3 id="p-views-label">Views</h3>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="/wiki/Responsive_web_design">Read</a></span></li>
-					<li id="ca-edit"><span><a href="/w/index.php?title=Responsive_web_design&amp;action=edit" title="You can edit this page. 
-Please review your changes before saving. [ctrl-option-e]" accesskey="e">Edit source</a></span></li>
-					<li id="ca-ve-edit"><span><a href="/w/index.php?title=Responsive_web_design&amp;veaction=edit" title="Edit this page with VisualEditor [ctrl-option-v]" accesskey="v">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Responsive_web_design&amp;action=history" title="Past versions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
-			</ul>
-</div>
-<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
-	<h3 id="p-cactions-label" tabindex="0"><span>Actions</span><a href="#" tabindex="-1"></a></h3>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-<div id="p-search" role="search">
-	<h3><label for="searchInput">Search</label></h3>
-	<form action="/w/index.php" id="searchform">
-				<div id="simpleSearch">
-						<input name="search" placeholder="Search" title="Search Wikipedia [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off">						<button type="submit" name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/static-1.22wmf17/skins/vector/images/search-ltr.png?303-4" alt="Search" width="12" height="13"></button>								<input type="hidden" name="title" value="Special:Search">
-		</div>
-	</form>
-</div>
-				</div>
-			</div>
-			<div id="mw-panel" class="collapsible-nav">
-					<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page" title="Visit the main page"></a></div>
-				<div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
-	<h3 id="p-navigation-label">Navigation</h3>
-	<div class="body">
-		<ul>
-			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li>
-			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
-			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
-			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
-			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [ctrl-option-x]" accesskey="x">Random article</a></li>
-			<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
-		<li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li></ul>
-	</div>
-</div>
-<div class="portal expanded" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
-	<h3 id="p-interaction-label" tabindex="2"><a href="#">Interaction</a></h3>
-	<div class="body" style="display: block;">
-		<ul>
-			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
-			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
-			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
-			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li>
-			<li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
-		</ul>
-	</div>
-</div>
-<div class="portal collapsed" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
-	<h3 id="p-tb-label" tabindex="3"><a href="#">Toolbox</a></h3>
-	<div class="body">
-		<ul>
-			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Responsive_web_design" title="List of all English Wikipedia pages containing links to this page [ctrl-option-j]" accesskey="j">What links here</a></li>
-			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Responsive_web_design" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li>
-			<li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [ctrl-option-u]" accesskey="u">Upload file</a></li>
-			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li>
-			<li id="t-permalink"><a href="/w/index.php?title=Responsive_web_design&amp;oldid=574072757" title="Permanent link to this revision of the page">Permanent link</a></li>
-			<li id="t-info"><a href="/w/index.php?title=Responsive_web_design&amp;action=info">Page information</a></li>
-			<li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q420295" title="Link to connected data repository item">Data item</a></li>
-<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Responsive_web_design&amp;id=574072757" title="Information on how to cite this page">Cite this page</a></li>		</ul>
-	</div>
-</div>
-<div class="portal collapsed" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
-	<h3 id="p-coll-print_export-label" tabindex="4"><a href="#">Print/export</a></h3>
-	<div class="body">
-		<ul>
-			<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Responsive+web+design">Create a book</a></li>
-			<li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Responsive+web+design&amp;oldid=574072757&amp;writer=rl">Download as PDF</a></li>
-			<li id="t-print"><a href="/w/index.php?title=Responsive_web_design&amp;printable=yes" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li>
-		</ul>
-	</div>
-</div>
-<div class="portal expanded" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span class="uls-settings-trigger" tabindex="0" role="button" aria-haspopup="true" original-title="Language settings"></span>
-	<h3 id="p-lang-label" tabindex="5"><a href="#">Languages</a></h3>
-	<div class="body" style="display: block;">
-		<ul>
-			<li class="interwiki-ca"><a href="//ca.wikipedia.org/wiki/Responsive_web_design" title="Responsive web design" lang="ca" hreflang="ca">Català</a></li>
-			<li class="interwiki-cs"><a href="//cs.wikipedia.org/wiki/Responzivn%C3%AD_web_design" title="Responzivní web design" lang="cs" hreflang="cs">Česky</a></li>
-			<li class="interwiki-de"><a href="//de.wikipedia.org/wiki/Responsive_Webdesign" title="Responsive Webdesign" lang="de" hreflang="de">Deutsch</a></li>
-			<li class="interwiki-es"><a href="//es.wikipedia.org/wiki/Dise%C3%B1o_web_adaptativo" title="Diseño web adaptativo" lang="es" hreflang="es">Español</a></li>
-			<li class="interwiki-fr"><a href="//fr.wikipedia.org/wiki/Responsive_Web_Design" title="Responsive Web Design" lang="fr" hreflang="fr">Français</a></li>
-			<li class="interwiki-it"><a href="//it.wikipedia.org/wiki/Responsive_Web_Design" title="Responsive Web Design" lang="it" hreflang="it">Italiano</a></li>
-			<li class="interwiki-nl"><a href="//nl.wikipedia.org/wiki/Responsive_webdesign" title="Responsive webdesign" lang="nl" hreflang="nl">Nederlands</a></li>
-			<li class="interwiki-pt"><a href="//pt.wikipedia.org/wiki/Web_Design_Responsivo" title="Web Design Responsivo" lang="pt" hreflang="pt">Português</a></li>
-			<li class="interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%90%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D0%B5%D0%B1-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD" title="Адаптивный веб-дизайн" lang="ru" hreflang="ru">Русский</a></li>
-			<li class="interwiki-sv"><a href="//sv.wikipedia.org/wiki/Responsive_web_design" title="Responsive web design" lang="sv" hreflang="sv">Svenska</a></li>
-			<li class="interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1" title="响应式网页设计" lang="zh" hreflang="zh">中文</a></li>
-			
-			<li class="wbc-editpage"><a href="//www.wikidata.org/wiki/Q420295#sitelinks-wikipedia" title="Edit interlanguage links">Edit links</a></li>
-		</ul>
-	</div>
-</div>
-			</div>
-			<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page" title="Visit the main page"></a></div>
-
-
+		<li><a href="http://en.wikipedia.org/wiki/RWD">RWD Wiki</a></li>
+		<li><a href="http://en.wikipedia.org/wiki/RWD">Responsive</a></li>
+		<li><a href="http://en.wikipedia.org/wiki/RWD">Web</a></li>
+		<li><a href="http://en.wikipedia.org/wiki/RWD">Design</a></li>
+		<li><a href="http://www.refactoru.com">Sign up!</a></li>
+	</ul>
+	</div>	
+  
+</body>
 <script type="text/javascript" src="/-/js/jquery.cycle.min.js"></script>
 <script src="RWD.js"></script>
 </div>
 </body>
-</html>
-
-<!-- things i I need to accomplish/use- 
-
- adjust text size depending on screen
- -->
+</html
