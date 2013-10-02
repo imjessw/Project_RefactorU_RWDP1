@@ -6,13 +6,13 @@
 // on mouse over highlight area
 
 
-$("p").on("mouseover", function(){
-	$("p").css("backgroundColor", "blueviolet");
+// $("p").on("mouseover", function(){
+// 	$("p").css("backgroundColor", "blueviolet");
 
-});
-$("p").on("mouseleave", function(){
-	$("p").css("backgroundColor", "transparent");
-});
+// });
+// $("p").on("mouseleave", function(){
+// 	$("p").css("backgroundColor", "transparent");
+// });
 
 // pop up window ask if you are navigating away from a page
 
@@ -25,9 +25,10 @@ $("a").on("click",function(){
 		return false
 	};
 });
-$("h1, h2, h3, h4").on("mouseover", function(){
-	$(this).append("!");
-});
+// $("h1, h2, h3, h4").on("mouseover", function(){
+// 	$(this).append("!");
+// });
+ // on click of thank you button a pop up will say thank you using JS
  
 var thankYou=$("#thankYou")
 var dialog=$("<div>Thanks for visiting.</div>")
